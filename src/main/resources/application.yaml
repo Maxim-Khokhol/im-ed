@@ -1,0 +1,36 @@
+#spring.application.name=image-editor
+spring:
+
+  task:
+    scheduling:
+      pool:
+        size: 5
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/db
+    username: root
+    password: hmax0705
+  output:
+    ansi:
+      enabled: ALWAYS
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 5000MB
+      max-request-size: 50000MB
+
+server:
+  port: 9000
+  tomcat:
+    max-http-form-post-size: 50000MB
+
+jwt:
+  secret: jh354ghjg13hjhgiuyib4n84fewfe812gffh32
+  lifetime: 300m
+logging:
+  level:
+    root: info
