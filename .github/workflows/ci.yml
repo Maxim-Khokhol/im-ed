@@ -22,5 +22,6 @@ jobs:
         distribution: 'temurin'
 
     - name: Build with Maven
-      run: mvn -B clean install --file photo-editor/pom.xml
+      run: mvn -B clean install
+
 
