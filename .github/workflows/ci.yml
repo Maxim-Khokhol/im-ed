@@ -20,11 +20,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Grant execute permission to mvnw
-        run: chmod +x ./mvnw
-
-      - name: Build with Maven Wrapper
-        run: ./mvnw -B clean install
-
+      - name: Build with Maven
+        run: mvn -B clean install
 
 
